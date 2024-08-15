@@ -11,5 +11,17 @@ config_version=5
 [application]
 
 config/name="3D Game Project"
+run/main_scene="res://game.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=3024
+window/size/viewport_height=1964
+window/size/mode=2
+
+[rendering]
+
+lights_and_shadows/directional_shadow/soft_shadow_filter_quality=3
+anti_aliasing/quality/msaa_3d=1
