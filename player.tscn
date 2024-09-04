@@ -10,6 +10,8 @@ points = PackedVector3Array(-0.125207, -0.532801, -0.480507, 0.0227831, 0.47607,
 [node name="Player" type="RigidBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 2.08165e-12, 2.08165e-12)
 lock_rotation = true
+linear_damp = 2.0
+angular_damp = 3.0
 script = ExtResource("1_bhekr")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
