@@ -25,3 +25,5 @@ shape = SubResource("ConvexPolygonShape3D_20dja")
 [node name="PitchPivot" type="Node3D" parent="TwistPivot"]
 
 [node name="Camera3D" type="Camera3D" parent="TwistPivot/PitchPivot"]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
