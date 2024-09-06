@@ -32,6 +32,7 @@ layout_mode = 2
 current_tab = 1
 
 [node name="Audio" type="HBoxContainer" parent="MarginContainer/VBoxContainer/TabContainer"]
+visible = false
 layout_mode = 2
 
 [node name="Controls" type="HBoxContainer" parent="MarginContainer/VBoxContainer/TabContainer"]
@@ -71,7 +72,9 @@ theme_override_font_sizes/font_size = 30
 text = "Horizonal Sensitivity :"
 
 [node name="Video" type="HBoxContainer" parent="MarginContainer/VBoxContainer/TabContainer"]
+visible = false
 layout_mode = 2
 
 [node name="Game Settings" type="HBoxContainer" parent="MarginContainer/VBoxContainer/TabContainer"]
+visible = false
 layout_mode = 2
