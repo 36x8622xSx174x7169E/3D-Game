@@ -72,7 +72,7 @@ func _physics_process(delta):
 		speed = WALK_SPEED
 
 	# Get the input direction and handle the movement/deceleration.
-	var input_dir = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
+	var input_dir = Input.get_vector("move_left", "move_right", "move_forward", "move_back")
 	var direction = (head.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	if is_on_floor():
 		if direction:

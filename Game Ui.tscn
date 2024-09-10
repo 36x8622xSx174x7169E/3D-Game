@@ -23,7 +23,7 @@ offset_bottom = -123.0
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+[node name="Settings" type="Label" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "Settings"
 
@@ -32,49 +32,39 @@ layout_mode = 2
 current_tab = 1
 
 [node name="Audio" type="HBoxContainer" parent="MarginContainer/VBoxContainer/TabContainer"]
-visible = false
+layout_mode = 2
+alignment = 1
+
+[node name="GridContainer" type="GridContainer" parent="MarginContainer/VBoxContainer/TabContainer/Audio"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/TabContainer/Audio/GridContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/TabContainer/Audio/GridContainer/HBoxContainer"]
+layout_mode = 2
+text = "hello"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/VBoxContainer/TabContainer/Audio/GridContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/TabContainer/Audio/GridContainer/HBoxContainer2"]
+layout_mode = 2
+text = "hello"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/TabContainer/Audio/GridContainer/HBoxContainer2"]
+layout_mode = 2
+alignment = 1
+
+[node name="HSlider" type="HSlider" parent="MarginContainer/VBoxContainer/TabContainer/Audio/GridContainer/HBoxContainer2/VBoxContainer"]
 layout_mode = 2
 
 [node name="Controls" type="HBoxContainer" parent="MarginContainer/VBoxContainer/TabContainer"]
 layout_mode = 2
 theme_override_constants/separation = 10
 
-[node name="GridContainer" type="GridContainer" parent="MarginContainer/VBoxContainer/TabContainer/Controls"]
-layout_mode = 2
-
-[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/TabContainer/Controls/GridContainer"]
-layout_mode = 2
-
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/TabContainer/Controls/GridContainer/HBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-text = "Inverted Camera Look :"
-
-[node name="CheckBox" type="CheckBox" parent="MarginContainer/VBoxContainer/TabContainer/Controls/GridContainer/HBoxContainer/Label"]
-layout_mode = 0
-offset_right = 24.0
-offset_bottom = 24.0
-
-[node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/VBoxContainer/TabContainer/Controls/GridContainer"]
-layout_mode = 2
-
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/TabContainer/Controls/GridContainer/HBoxContainer2"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-text = "Vertical Sensitivity :"
-
-[node name="HBoxContainer3" type="HBoxContainer" parent="MarginContainer/VBoxContainer/TabContainer/Controls/GridContainer"]
-layout_mode = 2
-
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/TabContainer/Controls/GridContainer/HBoxContainer3"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-text = "Horizonal Sensitivity :"
-
 [node name="Video" type="HBoxContainer" parent="MarginContainer/VBoxContainer/TabContainer"]
-visible = false
 layout_mode = 2
 
 [node name="Game Settings" type="HBoxContainer" parent="MarginContainer/VBoxContainer/TabContainer"]
-visible = false
 layout_mode = 2
